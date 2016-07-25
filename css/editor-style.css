@@ -1,0 +1,14 @@
+/*
+Editor stylesheet
+
+1. Import the Bootstrap CSS v3.3.6
+2. Import theme by Treze Estudio.
+3. Then add some CSS to improve your experience in the tiny-mce editor.
+*/
+
+@import url('bootstrap.min.css');
+@import url('treze.css');
+
+body#tinymce {
+  padding: 10px !important;
+}

@@ -1,0 +1,669 @@
+@charset "UTF-8";
+
+/* Treze Estudio CSS */
+
+/*--------------------------------------------------------------
+1.0 - Reset & Base
+--------------------------------------------------------------*/
+html, body {
+	width: 100%;
+	height: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*::after, *::before {
+	content: '';
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active {
+	outline: 0;
+}
+
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type="submit"], input[type="text"] {
+	-webkit-appearance: none;
+}
+
+.transparent {
+	background: transparent;
+	background-image: none;
+	border: none;
+}
+
+/* Style */
+body {
+	webkit-tap-highlight-color: #222;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+.wrap {
+	min-height: 100%;
+	margin-bottom: -75px;
+}
+
+.wrap:after {
+	content: "";
+	display: block;
+	height: 75px;
+}
+
+pre {
+	overflow: auto;
+}
+
+pre code {
+	padding: 0;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+small, .small {
+	font-size: 80%;
+	font-weight: 300;
+}
+
+::-moz-selection {
+	text-shadow: none;
+	color: #fff;
+	background: #222;
+}
+
+::selection {
+	text-shadow: none;
+	color: #fff;
+	background: #222;
+}
+
+/* Placeholders
+----------------------------------*/
+::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #7c7c7d;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #7c7c7d;
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #7c7c7d;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #7c7c7d;
+}
+
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+input:focus:-moz-placeholder {
+	color: transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+	color: transparent;
+} /* FF 19+ */
+textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+	color: transparent;
+} /* FF 4-18 */
+textarea:focus::-moz-placeholder {
+	color: transparent;
+} /* FF 19+ */
+img::selection {
+	color: #fff;
+	background: 0 0;
+}
+
+img::-moz-selection {
+	color: #fff;
+	background: 0 0;
+}
+
+/* Bootstrap 4.0 Alpha */
+.fade {
+	opacity: 0;
+	-webkit-transition: opacity .15s linear;
+	-o-transition: opacity .15s linear;
+	transition: opacity .15s linear;
+}
+
+.fade.in {
+	opacity: 1;
+}
+
+.container-fluid {
+	max-width: 1440px;
+}
+
+/*--------------------------------------------------------------
+2.0 - Elements
+--------------------------------------------------------------*/
+.capitalize {
+	text-transform: capitalize;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.pointer {
+	cursor: pointer !important;
+}
+
+.default {
+	cursor: default !important;
+}
+
+/*--------------------------------------------------------------
+2.1 Text
+--------------------------------------------------------------*/
+.pm0 {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.pm5 {
+	padding: 0;
+	margin: 0 5px;
+}
+
+.pm10 {
+	padding: 0 10px;
+}
+
+.m0 {
+	margin: 0 !important;
+}
+
+.p0 {
+	padding: 0 !important;
+}
+
+.p20 {
+	padding: 0 20px;
+}
+
+.m5 {
+	margin: 0 5px;
+}
+
+.m10 {
+	margin: 0 10px;
+}
+
+.space-xy {
+	padding: 1rem !important;
+}
+
+.space-y {
+	padding-top: 1rem !important;
+	padding-bottom: 1rem !important;
+}
+
+.space-x {
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+.space-xs {
+	margin: 15px 0;
+}
+
+.space {
+	margin: 25px 0;
+}
+
+.space-sm {
+	margin: 40px 0;
+}
+
+.space-md {
+	margin: 60px 0;
+}
+
+.space-lg {
+	margin: 100px 0;
+}
+
+.space-mobile {
+	margin: 40px 0;
+}
+
+@media ( max-width : 480px) {
+	.space-mobile {
+		margin: 10px 0;
+	}
+}
+
+.icon-margin {
+	padding: 0 6px 0 0;
+}
+
+.rotate-45 {
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+}
+
+.rotate-90 {
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+}
+
+.rotate-120 {
+	-ms-transform: rotate(120deg); /* IE 9 */
+	-webkit-transform: rotate(120deg); /* Chrome, Safari, Opera */
+	transform: rotate(120deg);
+}
+
+.rotate-180 {
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	transform: rotate(180deg);
+}
+
+.embed-responsive-item {
+	width: 100%;
+	height: auto;
+}
+
+.embed-responsive-item img {
+	width: 100%;
+	height: auto;
+}
+
+img.embed-responsive-item {
+	width: 100%;
+	height: auto;
+}
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.valign {
+	display: flex;
+	flex-direction: row;
+}
+
+.valign>[class^="col-"], .valign>[class*=" col-"] {
+	display: flex;
+	align-items: center; /* Align the flex-items vertically */
+	justify-content: center; /* Optional, to align inner flex-items horizontally within the column  */
+}
+
+.btn.btn-round {
+	border-radius: 50px!important;
+}
+
+/*--------------------------------------------------------------
+2.1 Colours
+--------------------------------------------------------------*/
+.text-white {
+	color: white;
+}
+
+.text-black {
+	color: #131313;
+	/* color: rgb(19,19,19); */
+}
+
+.bg-white {
+	color: #131313;
+	background: white;
+}
+
+.bg-black {
+	color: white;
+	background: rgba(19, 19, 19, 1);
+}
+
+.text-blue {
+	color: rgba(63, 81, 181, 1);
+	/*color: 3F51B5;*/
+}
+
+.bg-blue {
+	background: rgba(63, 81, 181, 1);
+}
+
+.text-red {
+	color: rgba(255, 0, 0, 1);
+	/*color: ff0000;*/
+}
+
+.bg-red {
+	background: rgba(255, 0, 0, 1);
+}
+
+.text-gray {
+	color: rgb(74, 74, 74);
+	/* color: #4a4a4a*/
+}
+
+.bg-gray {
+	background: rgb(74, 74, 74);
+}
+
+.text-gray-alt {
+	color: rgb(170, 177, 175);
+	/* color: #aab1af*/
+}
+
+.bg-gray-alt {
+	background: rgb(170, 177, 175);
+}
+
+.text-moon {
+	color: rgb(239, 233, 229);
+	/* color: #EFE9E5*/
+}
+
+.bg-moon {
+	background: rgba(239, 233, 229, 1);
+}
+
+.text-desert {
+	color: rgba(172, 160, 149, 1);
+	/*color: aca095;*/
+}
+
+.bg-desert {
+	background: rgba(172, 160, 149, 1);
+}
+
+.text-desert-alt {
+	color: rgba(141, 129, 118, 1);
+	/*color: 8D8176;*/
+}
+
+.bg-desert-alt {
+	background: rgba(141, 129, 118, 1);
+}
+
+.text-desert-white {
+	color: rgba(141, 129, 118, 1);
+	/*color: 8D8176;*/
+}
+
+.bg-desert-white {
+	background: rgba(255, 245, 233, 1);
+}
+
+.text-primary {
+	color: rgb(255, 160, 42);
+	/* color: #ffa02a ;*/
+}
+
+.bg-primary {
+	background: rgba(255, 160, 42, 1);
+}
+
+.text-primary-alt {
+	color: rgba(255, 160, 42, 1);
+	/* color: #2affa0; */
+}
+
+.bg-primary-alt {
+	background: rgba(255, 160, 42, 1);
+}
+
+.text-secundary {
+	color: rgb(84, 119, 48);
+	/* color: #547730;*/
+}
+
+.bg-secundary {
+	background: rgba(84, 119, 48, 1);
+}
+
+/* End of Colours */
+
+/*
+Max content widths
+*/
+.size-auto, .size-full, .size-large, .size-medium, .size-thumbnail {
+	max-width: 100%;
+	height: auto
+}
+
+/*
+Header logo
+If you require a Site title and a logo, an example of how to do this is provided below (use your own logo):
+
+#site-title a {
+  display: inline-block;
+	padding-left 60px;
+  background: url(../img/logo.png) 0 0 no-repeat;
+}
+*/
+
+/*
+Main content
+*/
+#content article {
+	margin-bottom: 40px
+}
+
+#content header {
+	margin: 20px 0
+}
+
+#content section {
+	margin-bottom: 20px
+}
+
+#content footer {
+	padding-bottom: 20px
+}
+
+/*
+Sidebar
+*/
+.sidebar {
+	margin-top: 20px
+}
+
+.sidebar section {
+	margin-bottom: 40px
+}
+
+.sidebar ul, .sidebar ol {
+	list-style-type: none;
+	padding: 0
+}
+
+.sidebar li {
+	margin: 10px 0
+}
+
+/*
+Hide form placeholders on focus
+*/
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+input:focus:-moz-placeholder {
+	color: transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+	color: transparent;
+} /* FF 19+ */
+textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+	color: transparent;
+} /* FF 4-18 */
+textarea:focus::-moz-placeholder {
+	color: transparent;
+} /* FF 19+ */
+
+/*
+Comments
+*/
+#respond {
+	margin-top: 40px
+}
+
+ol.commentlist {
+	counter-reset: li; /* Initiate a counter */
+	padding: 0
+}
+
+ol.commentlist ul {
+	padding: 0
+}
+
+ol.commentlist>li {
+	position: relative;
+	margin: 0 0 20px 0;
+	list-style: none /* Disable the normal item numbering */
+}
+
+ol.commentlist>li:before {
+	content: "Thread " counter(li); /* Use the counter as content */
+	counter-increment: li; /* Increment the counter by 1 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-bottom-left-radius: 4px;
+	padding: 5px 20px 5px 10px;
+	color: #999
+}
+
+ol.commentlist li ol, ol.commentlist li ul {
+	list-style-type: none;
+	margin: 0
+}
+
+.commentlist li li {
+	background: #f8f8f8;
+}
+
+.commentlist li li li {
+	background: #fff
+}
+
+.commentlist li li li li {
+	background: #f8f8f8
+}
+
+.commentlist li li li li li li {
+	background: #fff
+}
+
+.commentlist li {
+	padding: 20px
+}
+
+.commentlist ul li {
+	margin-top: 20px;
+	margin-bottom: 0
+}
+
+.reply p {
+	margin: 0
+}
+
+/*
+Site footer
+*/
+.site-footer ul, .site-footer ol {
+	list-style-type: none;
+	padding: 0
+}
+
+.site-footer li {
+	margin: 10px 0
+}
+
+.site-sub-footer p {
+	text-align: center
+}
+
+.site-footer p {
+	text-align: center
+}
