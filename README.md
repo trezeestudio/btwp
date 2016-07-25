@@ -2,7 +2,7 @@
 *Version 1.0.0*
 
 **Btwp is a WordPress Bootstrap starter theme
-Based Version 2.7.1 by Simon Padbury
+Based Version 2.7.1 by [Simon Padbury](https://github.com/SimonPadbury/bst)
 
 -----
 
