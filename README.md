@@ -14,5 +14,5 @@ Based Version 2.7.1 by [Simon Padbury](https://github.com/SimonPadbury/bst)
 * **jQuery 1.12.4** – either using the Google CDN or WordPress's onboard jQuery. You decide.
 * **modernizr-2.8.3.min.js** and **respond.js** – included, enqueued.
 * A starter CSS theme - `css/style.css`, enqueued.
-* OwlCarousel2 - jQuery Responsive Carousel.
+* [OwlCarousel2](https://github.com/OwlCarousel2/OwlCarousel2) - jQuery Responsive Carousel.
 * [MIT licence](http://opensource.org/licenses/MIT) (open source).
